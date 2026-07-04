@@ -693,10 +693,8 @@
 
     // --- GOOGLE APPS SCRIPT POLYFILL UNTUK MODE PWA (STANDALONE) ---
     // GANTI URL DI BAWAH INI DENGAN URL WEB APP GOOGLE APPS SCRIPT ANDA
-    const IS_CLOUDFLARE = window.location.hostname.includes('workers.dev') || window.location.hostname.includes('pages.dev') || window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-    const GAS_API_URL = IS_CLOUDFLARE 
-        ? window.location.origin + '/api' 
-        : "https://script.google.com/macros/s/AKfycbykEUpnsDAAMz65QZOiK70OlqU7t7kydvncr_SiozTENBqpGvBzmxz9Kv45uCaV-DLThA/exec";
+    const IS_CLOUDFLARE = true; // Force Cloudflare mode for custom domains
+    const GAS_API_URL = window.location.origin + '/api';
 
     if (typeof google === 'undefined') {
         window.google = {};
