@@ -1,4 +1,4 @@
-const CACHE_NAME = 'spp-cache-v13';
+const CACHE_NAME = 'spp-cache-v14';
 const urlsToCache = [
   './index.html',
   './manifest.json',
