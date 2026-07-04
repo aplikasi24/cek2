@@ -1,0 +1,12 @@
+name = "aplikasi-spp"
+main = "src/index.js"
+compatibility_date = "2023-12-01"
+
+# Serve the static HTML frontend
+assets = { directory = "./public", binding = "ASSETS" }
+
+
+[[d1_databases]]
+binding = "DB" # i.e. env.DB
+database_name = "spp_database_v2"
+database_id = "be2db367-88e7-4efb-999c-4c054443e2b0"
