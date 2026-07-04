@@ -1,4 +1,4 @@
-name = "aplikasi-spp"
+name = "aplikasi-cek"
 main = "src/index.js"
 compatibility_date = "2023-12-01"
 
@@ -8,5 +8,5 @@ assets = { directory = "./public", binding = "ASSETS" }
 
 [[d1_databases]]
 binding = "DB" # i.e. env.DB
-database_name = "spp_database_v2"
-database_id = "be2db367-88e7-4efb-999c-4c054443e2b0"
+database_name = "cek_pembayaran"
+database_id = "69ad8ba7-d767-4465-9fa4-766f9c15339f"
